@@ -72,7 +72,7 @@ console.log(users)
                 {Checkname?"":<p className="text-red-600">Please fill the Username</p>}
                 {Checkpass?"":<p className="text-red-600">Please give the Password</p>}
                 {Checkconform?"":<p className="text-red-600">Please conform the Password </p>}
-                {passconform?"":<p className="text-3x1 font-semibold text-red-800">Please Give  Password And Conform Password Must Be Same</p>}
+                {passconform?"":<p className="text-3x1 font-semibold text-red-800">Password And Conform Password Want Be Same</p>}
 
                 {/* {
                     CheckValue?"":{username?"":<p>please fill the username</p> &&
@@ -84,8 +84,8 @@ console.log(users)
                    {userconform?"":<p>please conform the password </p>} */} 
                 
                 <input type="text" value={username} onChange={handleName} placeholder='entername' className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
-                <input type="text" value={userpass} onChange={handlePass} placeholder='enterpassword' className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
-                <input type="text" value={userconform} onChange={handleConform} placeholder='conformpassword' className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
+                <input type="password" value={userpass} onChange={handlePass} placeholder='enterpassword' className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
+                <input type="password" value={userconform} onChange={handleConform} placeholder='conformpassword' className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
                 <button onClick={handleStore} className=" w-28 p-2 border rounded-md bg-blue-500 text-white">SignUp</button>
 
                 <p>you have an Account?<Link className="underline" to="/">Login</Link></p>

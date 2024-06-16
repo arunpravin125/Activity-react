@@ -68,7 +68,7 @@ function Todo() {
         <div className="p-1 mx-10">
         {warning?<p className= " font-bold text-red-900">Please write Activity :|</p>:""}
         <input className="p-2 border rounded-md my-2" type="text" value={input} onChange={handleInput}></input>
-        <button className="p-2 text-2xl font-bold hover:text-green-900" onClick={handleAdd}>Add</button>
+        <button className=" p-2 mx-2 font-bold bg-lime-300 border rounded-md hover: bg-green-100 text-green-900" onClick={handleAdd}>Add</button>
 
         {
             store.map(function(data,index){

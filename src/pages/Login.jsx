@@ -70,9 +70,9 @@ function Login(props) {
           
             <div className="my-2 flex flex-col ">
                 <input type="text" value={inputname} placeholder='entername' onChange={handleInput} className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
-                <input type="text" value={inputpass} placeholder='enterpassword' onChange={handlepass} className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
+                <input type="password" value={inputpass} placeholder='enterpassword' onChange={handlepass} className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
               
-                <button onClick={handleCheck} className=" w-28 p-2 border rounded-md bg-blue-500 text-white">Login</button>
+                <button onClick={handleCheck} className=" w-28 p-2 border rounded-md bg-orange-300 text-white">Login</button>
 
                 <p>you dont have an Account?<Link className="underline" to="/signup">SignUp</Link></p>
             </div>
