@@ -61,8 +61,8 @@ function Login(props) {
         setisCorrect(true)
     }
   return (
-    <div className="p-10 bg-yellow-100">
-        <div className="p-10 bg-slate-300 border rounded-md">
+    <div className="p-16 h-96% w-96% bg-yellow-100">
+        <div className="p-10 my-4 h-80% w-96% bg-slate-300 border rounded-md">
             <h1>Hey hi </h1>
             {
                 isCorrect?< p className="text-red-600">Please Enter Correct Name and Password </p>:  <h1>I will manage your activities after Login :)</h1>

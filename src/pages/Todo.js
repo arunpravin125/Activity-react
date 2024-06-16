@@ -59,7 +59,7 @@ function Todo() {
     }
   return (
     <div className="p-2  bg-yellow-100">
-        <h1 className="text-center text-3xl">Todo Activies :)</h1>
+        <h1 className="text-center text-3xl">Todo Activities :)</h1>
        
         <div className="">
         <h1 className="text-3x1 font-bold text-center mt-3">Welcome {data.state.user}</h1>
@@ -67,17 +67,18 @@ function Todo() {
         </div>
         <div className="p-1 mx-10">
         {warning?<p className= " font-bold text-red-900">Please write Activity :|</p>:""}
-        <input className="p-2 border rounded-md my-2" type="text" value={input} onChange={handleInput}></input>
-        <button className=" p-2 mx-2 font-bold bg-lime-300 border rounded-md hover: bg-green-100 text-green-900" onClick={handleAdd}>Add</button>
+        <input className="p-2  my-2 border-2 border-lime-300" type="text" placeholder='enter activities' value={input} onChange={handleInput}></input>
+        <button className=" p-2  border-2  font-bold bg-lime-300  hover: bg-green-100 text-green-900" onClick={handleAdd}>Add</button>
 
         {
+            store.length===0?<p className="text-2xl font-bold text-blue-500">please Add activities :)</p>:
             store.map(function(data,index){
                 return <div key={index}>
                     {
                         editValue===index?
                         <div className="bg-blue-300 p-1 border rounded-md flex gap-5 justify-between ">
-                            <input className="p-1 border-blue-300 border rounded-md" value={editInput} onChange={handleEditInput}></input>
-                            <button className="text-orange-600 mx-5" onClick={()=>handleSave(index)}>Save</button>
+                            <input className="p-1 w-32  border-blue-300 border rounded-md" value={editInput} onChange={handleEditInput}></input>
+                            <button className="text-orange-600 p-1" onClick={()=>handleSave(index)}>Save</button>
 
                         </div>:
                         <div className="bg-green-300 p-2 border rounded-md flex gap-5 my-2 justify-between " key={index}>

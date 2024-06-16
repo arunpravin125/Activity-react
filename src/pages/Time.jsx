@@ -17,13 +17,26 @@ function Time() {
         let minutes=time.getMinutes()
         let seconds=time.getSeconds()
         let maridian=hours>=12?"PM":"AM"
-        return `${hours}:${minutes}:${seconds}:${maridian}`
+
+        hours=hours%12||12
+        return `${addzero(hours)}:${addzero(minutes)}:${addzero(seconds)}:${addzero(maridian)}`
+    }
+
+    function addzero(number){
+
+        return (number<10?"0":"")+number
+
     }
     function date(){
         let date=time.getDate();
         let month=time.getMonth()+1;
         let year=time.getFullYear()
-        return `${date}:${month}:${year}`
+        return `${addnum(date)}:${addnum(month)}:${addnum(year)}`
+    }
+    function addnum(num){
+
+        return (num<10?"0":"")+num
+
     }
 
   return (

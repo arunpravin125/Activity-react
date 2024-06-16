@@ -64,8 +64,8 @@ console.log(users)
         setuserconform(eve.target.value)
     }
   return (
-    <div className="p-10 bg-yellow-100">
-        <div className="p-10 bg-slate-300 border rounded-md">
+    <div className="p-16 bg-yellow-100">
+        <div className="p-9 my-1 bg-slate-300 border rounded-md">
             <h1>Hey hi</h1>
             <h1>I will manage your activities after Signup :)</h1>
             <div className="my-2 flex flex-col ">
