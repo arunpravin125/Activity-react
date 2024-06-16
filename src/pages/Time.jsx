@@ -21,7 +21,7 @@ function Time() {
     }
     function date(){
         let date=time.getDate();
-        let month=time.getMonth();
+        let month=time.getMonth()+1;
         let year=time.getFullYear()
         return `${date}:${month}:${year}`
     }
