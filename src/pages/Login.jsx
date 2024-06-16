@@ -61,14 +61,14 @@ function Login(props) {
         setisCorrect(true)
     }
   return (
-    <div className="p-16 h-96% w-96% bg-yellow-100">
-        <div className="p-10 my-4 h-80% w-96% bg-slate-300 border rounded-md">
+    <div className="p-10 bg-yellow-100">
+        <div className="p-10  my-20 bg-slate-300 border rounded-md">
             <h1>Hey hi </h1>
             {
                 isCorrect?< p className="text-red-600">Please Enter Correct Name and Password </p>:  <h1>I will manage your activities after Login :)</h1>
             }
           
-            <div className="my-2 flex flex-col ">
+            <div className="flex flex-col ">
                 <input type="text" value={inputname} placeholder='entername' onChange={handleInput} className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
                 <input type="password" value={inputpass} placeholder='enterpassword' onChange={handlepass} className="w-52 my-2 bg-transparent p-1 border-black border rounded-md"></input>
               

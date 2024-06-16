@@ -64,11 +64,11 @@ console.log(users)
         setuserconform(eve.target.value)
     }
   return (
-    <div className="p-16 bg-yellow-100">
-        <div className="p-9 my-1 bg-slate-300 border rounded-md">
+    <div className=" bg-yellow-100 p-10">
+        <div className="bg-[#cdd6d2] p-10 my-20 border rounded-md">
             <h1>Hey hi</h1>
             <h1>I will manage your activities after Signup :)</h1>
-            <div className="my-2 flex flex-col ">
+            <div className=" flex flex-col ">
                 {Checkname?"":<p className="text-red-600">Please fill the Username</p>}
                 {Checkpass?"":<p className="text-red-600">Please give the Password</p>}
                 {Checkconform?"":<p className="text-red-600">Please conform the Password </p>}

@@ -12,7 +12,7 @@ function App() {
     }
   ])
   return ( 
-    <div>
+    <div className="">
       <BrowserRouter>
       {/* <Link to="/signup">Home</Link>
       <Link to="/login">login</Link> */}
